@@ -1,12 +1,11 @@
 {
-  "name": "NERP-stack-boilerplate",
+  "name": "nerp-stack-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:watch": "webpack -w",
-    "start": "npm run start:server & npm run build:watch",
-    "start:server": "nodemon server/index --ignore public/",
+    "start:backend": "nodemon server/index --ignore public/",
+    "start:frontend": "webpack -w",
     "seed": "node seed/seed.js"
   },
   "keywords": [],

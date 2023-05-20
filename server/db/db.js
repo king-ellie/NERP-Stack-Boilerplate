@@ -1,6 +1,6 @@
-const { Sequelize, DataTypes } = require('sequelize')
+import { Sequelize, DataTypes } from 'sequelize';
 
-const dbName
+const dbName = ''
 const db = new Sequelize(`postgres://localhost/${dbName}`, {logging: false})
 
 // Define models here or move them to other files in the db directory
@@ -14,9 +14,9 @@ const SampleModel = db.define('nameOfModel', {
     }
 })
 
-module.exports = {
+export default {
     db,
     models: {
         SampleModel,
     }
-}
+};

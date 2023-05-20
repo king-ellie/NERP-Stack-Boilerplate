@@ -3,7 +3,7 @@ module.exports = {
     devtool: 'source-map',
     entry: './client/index.js',
     output: {
-      filename: './public/bundle.js',
+      filename: './public/builds/webpack/bundle.js',
       path: __dirname,
     },
     module: {

@@ -11,7 +11,7 @@ const __dirname = path.dirname(__filename);
 app.use('/public', express.static(path.join(__dirname, '../public')));
 app.use(express.json())
 
-app.get('/', (req, res, next) => {
+app.get('/', (_req, res, _next) => {
     res.sendFile(path.join(__dirname, '../client/index.html'))
 })
 

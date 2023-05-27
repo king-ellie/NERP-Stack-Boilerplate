@@ -1,9 +1,9 @@
 module.exports = {
     mode: 'development',
     devtool: 'source-map',
-    entry: './client/index.js',
+    entry: './client/index.tsx',
     output: {
-      filename: './public/bundle.js',
+      filename: './public/builds/webpack/bundle.js',
       path: __dirname,
     },
     module: {

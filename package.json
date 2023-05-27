@@ -7,12 +7,17 @@
   "scripts": {
     "start:backend": "nodemon server/index --ignore public/",
     "start:frontend": "webpack -w",
-    "seed": "node seed/seed.js"
+    "seed": "node seed/seed.js",
+    "tsc:w": "tsc -w"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
+    "@types/react-redux": "^7.1.25",
+    "@types/react-router-dom": "^5.3.3",
     "axios": "^0.21.4",
     "express": "^4.18.2",
     "pg": "^8.6.0",
